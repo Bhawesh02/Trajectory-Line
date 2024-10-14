@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1164,7 +1165,8 @@ MonoBehaviour:
   m_ballPrefab: {fileID: 4485064569492602698, guid: be2f262539015d24f9f5b4df9f4d1119, type: 3}
   m_force: 100
   m_ballSpawn: {fileID: 2103773518021692817}
-  m_isMoved: 1
+  m_maxRotationAngle: 20
+  m_rotationSpeed: 10
 --- !u!114 &6267182812057480958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,7 +1180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lineRenderer: {fileID: 6267182812057480959}
-  m_maxPhysicsSimulationFrames: 100
+  m_maxPhysicsSimulationFrames: 40
 --- !u!120 &6267182812057480959
 LineRenderer:
   serializedVersion: 2
